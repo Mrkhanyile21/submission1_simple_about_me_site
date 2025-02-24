@@ -7,43 +7,51 @@
     <title>Portfolio Website</title>
 
     <style>
-        .navigation{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: right;
+        header {
+            text-align: center;
+        }
 
-            list-style: none;
+        h2 {
+            text-align: center;
+        }
+
+        html {
             margin: 0;
-            background-color: white;
-            color: black;
+            padding: 0;
+            background: linear-gradient(45deg, rgb(103, 209, 103), rgb(56, 56, 173), rgb(179, 179, 68));
         }
 
-        .navigation a:hover{
-            background: lightgoldenrodyellow;
+        .navigation {
+            display: flex;
+            justify-content: space-around; 
+            padding: 30px 10%;
+            background-color: rgb(28, 28, 128);
         }
 
-        @media all and (max-width: 800px) {
-            .navigation {
-                justify-content: space-around;
-            }
+        .nav_links {
+            list-style: none;
+            padding: 0;
+            margin: 0; 
+            display: flex; 
         }
 
-        @media all and (max-width: 600px) {
-            .navigation {
-                flex-flow: column wrap;
-                padding: 0;
-            }
-        }
-        .navigation a { 
-            text-align: center; 
-            padding: 10px;
-            border-top: 1px solid rgba(255, 255, 255,0.3); 
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+        .nav_links li {
+            margin-right: 20px; 
         }
 
-        .navigation li:last-of-type a {
-            border-bottom: none;
+        a {
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease 0s;
         }
+
+        a:hover {
+            color: lightblue;
+        }
+
+
+
     </style>
 </head>
 
@@ -55,7 +63,7 @@
 
     <!-- Navigation part -->
     <nav class="navigation">
-        <ul>
+        <ul class="nav_links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
@@ -89,7 +97,7 @@
         </section>
 
         <article>
-            <h3>Latest Project</h3>
+            <h3 style="text-align: center;">Latest Project</h3>
 
             <p>
                 The latest project I have worked on was a dictionary web application where you can search the meaning of words. 
