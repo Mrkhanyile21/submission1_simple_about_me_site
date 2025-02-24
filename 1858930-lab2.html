@@ -5,6 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
+
+    <style>
+        .navigation{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: right;
+
+            list-style: none;
+            margin: 0;
+            background-color: white;
+            color: black;
+        }
+
+        .navigation a:hover{
+            background: lightgoldenrodyellow;
+        }
+
+        @media all and (max-width: 800px) {
+            .navigation {
+                justify-content: space-around;
+            }
+        }
+
+        @media all and (max-width: 600px) {
+            .navigation {
+                flex-flow: column wrap;
+                padding: 0;
+            }
+        }
+        .navigation a { 
+            text-align: center; 
+            padding: 10px;
+            border-top: 1px solid rgba(255, 255, 255,0.3); 
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+        }
+
+        .navigation li:last-of-type a {
+            border-bottom: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,10 +69,10 @@
 
             <p class="p1">
                 I am a proud final year student atthe University of Witwatersrand, doing Bachelor of Science in 
-                Computer Science. I love solving problems, wether given or self discovered. As the saying goes
+                Computer Science. I love solving problems, wether given or self discovered. As the saying goes: <br> <br>
                 <q>
-                   <i>"Technology is the science that grants an individual power to make thoughts come into reality."</i> 
-                </q>
+                   <i>Technology is the science that grants an individual power to make thoughts come into reality.</i> 
+                </q> <br> <br>
 
                 I have done a lot of projects in my previous years at the university. Including writing scripts to automate tasks on my laptop,
                 to building a fully functional android app in my second year. The programming languages I have worked with so far are:
